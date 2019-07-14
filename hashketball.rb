@@ -204,21 +204,22 @@ end
 game = Game.new(GAME_HASH)
 players = game.all_players
 biggest_shoe = player.max { |a, b| a.shoe_size <=> b.shoe_size}
-  rebounds = 0
-  shoe_size = 0
-  game_hash.each do |location, team_data|
-    team_data.each do |players, stats|
-      if team_name == team_data[:team_name]
-        team_data[:players].each do |player|
-         binding.pry 
-         player[:rebounds]
+big_shoe_rebounds(biggest_shoe)
+ # rebounds = 0
+  #shoe_size = 0
+  #game_hash.each do |location, team_data|
+   # team_data.each do |players, stats|
+    #  if team_name == team_data[:team_name]
+     #   team_data[:players].each do |player|
+      #   binding.pry 
+        # player[:rebounds]
     # team_data[players][:rebounds]
   #binding.pry 
   #iterate
   #sort method 
-        end  
-      end
-    end 
+       # end  
+     # end
+   # end 
   end 
 end
 
