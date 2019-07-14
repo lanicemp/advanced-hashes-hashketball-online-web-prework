@@ -203,7 +203,7 @@ def big_shoe_rebounds(player)
 end 
 game = Game.new(GAME_HASH)
 players = game.all_players
-biggest_shoe = player.max { |a, b| a.shoe_size 
+biggest_shoe = player.max { |a, b| a.shoe_size <=> b.shoe_size}
   rebounds = 0
   shoe_size = 0
   game_hash.each do |location, team_data|
