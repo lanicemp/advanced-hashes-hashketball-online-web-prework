@@ -198,7 +198,12 @@ def player_stats(player)
 end 
   
   
-def big_shoe_rebounds
+def big_shoe_rebounds(player)
+  puts "#{player, name},has shoe size: #{player.shoe_size}, and #{player.rebounds} rebounds"
+end 
+game = Game.new(GAME_HASH)
+players = game.all_players
+biggest_shoe = player.max { |a, b| a.shoe_size 
   rebounds = 0
   shoe_size = 0
   game_hash.each do |location, team_data|
